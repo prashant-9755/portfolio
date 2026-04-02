@@ -1,0 +1,1 @@
+“This repository contains my personal portfolio website, developed using HTML and CSS. It presents my academic journey, technical projects, and skills in Computer Science. The goal is to create a clean, responsive, and professional showcase of my work.”
