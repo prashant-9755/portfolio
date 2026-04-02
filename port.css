@@ -1,0 +1,109 @@
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+* { margin:0; 
+    padding:0;
+     box-sizing:border-box; 
+     font-family:'Poppins', sans-serif; 
+    }
+body { background: var(--bg-color);
+     color: var(--text-color);
+     }
+section { min-height: 100vh;
+     padding: 10rem 9% 2rem; 
+    }
+
+.header { position:fixed;
+     top:0; left:0; 
+     width:100%;
+      padding:2rem 9%;
+       background:var(--bg-color);
+        display:flex; justify-content:space-between; 
+        align-items:center; 
+        z-index:100; 
+    }
+.logo { font-size:2.5rem; 
+    font-weight:600; 
+    color:var(--text-color); 
+}
+.navbar a { font-size:1.7rem;
+     color:var(--text-color); 
+     margin-left:4rem; transition:.3s; 
+    }
+.navbar a:hover, .navbar a.active { 
+    color:var(--main-color); 
+}
+
+.home { 
+    display:flex; 
+    justify-content:center;
+     align-items:center; gap:2rem; 
+    
+    }
+.home-img img, .about-img img {
+     width:300px;
+     height:300px;
+      border-radius:50%; 
+      object-fit:cover; 
+      box-shadow:0 0 10px #666;
+     }
+.home-content h1 {
+     font-size:5rem; 
+
+
+}
+.home-content p {
+     font-size:1.6rem;   
+     margin:2rem 0;
+     }
+
+.btn { 
+    display:inline-block;
+     padding:1rem 2.8rem;
+      background:var(--main-color);
+       border-radius:4rem; 
+       
+       color:var(--second-bg-color);
+        font-weight:600;
+         transition:.3s; 
+    }
+.btn:hover { 
+    box-shadow:0 0 1rem var(--main-color);
+ }
+
+.work-container {
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:2rem; }
+.work-box { 
+    background:var(--second-bg-color); 
+    padding:2rem; border-radius:1rem; 
+    
+    text-align:center; 
+    transition:.3s; 
+}
+.work-box:hover { transform:translateY(-10px); 
+}
+.work-box i { font-size:4rem; 
+    color:var(--main-color);
+     margin-bottom:1rem;
+     }
+     body.light-mode {
+  --bg-color: #ffffff;
+  --second-bg-color: #f0f0f0;
+  --text-color: #000000;
+  --main-color: #007bff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
